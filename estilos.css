@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 169, 107);
+    background: linear-gradient(to right, #48015a, #eb9eee);
+    background: -webkit-linear-gradient(to right, #97ac22, #fb7dff);
+    min-height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    background-color: #5a0147;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 20px 0;
+}
+.card{
+    width: 90%;
+    height: auto;
+    border: 5px solid rgba(253, 253, 253, 253);
+    border-radius: 10px;
+    margin: 10px auto;
+}
+.contenedorImagen{
+    text-align: center;
+}
+.contenedorImagen img{
+    animation: animacionMessi ease-in-out 2s infinite alternate;
+}
+@keyframes animacionMessi{
+    0%{
+        transform: translateX(-10%);
+    }
+    100%{
+        transform: translateX(10%);
+    }
+}
+.contenedorTexto{
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+}
+
+@media screen and (min-width:768px){
+    .card{
+        width: 60%;
+        max-width: 1000px;
+    }
+    .contenedorImagen img{
+        width: 70%;
+    }
+}
+.contenedorImagen2{
+    animation: animacionspidy ease-in-out 2s infinite alternate;
+}
+@keyframes animacionspidy{
+    0%{
+        transform: translateX(-10%);
+    }
+    100%{
+        transform: translateX(10%);
+    }
